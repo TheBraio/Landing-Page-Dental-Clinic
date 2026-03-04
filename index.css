@@ -1,20 +1,20 @@
 :root {
 
     --primary-color: #41ACA9; 
-    --primary-hover: #2e8b88; /* Versão um pouco mais escura para hover */
+    --primary-hover: #2e8b88; 
     
-    /* A Calmaria (R223 G225 B225) -> #DFE1E1 */
+   
     --bg-calm: #DFE1E1;
-    --bg-light: #f4f6f6; /* Variação mais clara para alternar seções */
+    --bg-light: #f4f6f6; 
 
-    /* Os Instrumentos (R144 G143 B143) -> #908F8F */
+
     --text-gray: #908F8F;
     
-    /* A Luz Branca */
+
     --white: #FFFFFF;
 
-    /* Outros */
-    --text-dark: #333333; /* Mantido escuro para leitura de textos longos */
+
+    --text-dark: #333333; 
     --whatsapp-green: #25D366;
     --whatsapp-dark: #1da851;
     --spacing-section: 80px;
@@ -40,7 +40,6 @@ body {
     background-color: var(--white);
 }
 
-/* --- UTILITÁRIOS --- */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -71,7 +70,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Botão secundário usando a cor da marca */
 .btn-secondary {
     background-color: var(--primary-color);
 }
@@ -105,7 +103,6 @@ body {
     color: var(--text-gray);
 }
 
-/* --- HEADER / HERO --- */
 header {
     background-color: var(--white);
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -121,7 +118,6 @@ header {
     align-items: center;
 }
 
-/* Placeholder para Logo */
 .logo-placeholder {
     height: 60px;
     width: 200px;
@@ -141,7 +137,6 @@ header {
 }
 
 .hero {
-    /* Fundo em degradê — a imagem principal ficará no lado direito do conteúdo */
     background: linear-gradient(rgba(65, 172, 169, 0.9), rgba(46, 139, 136, 0.9));
     color: var(--white);
     padding: 80px 0;
@@ -162,7 +157,6 @@ header {
     font-weight: 600;
 }
 
-/* --- HERO: duas colunas (texto à esquerda, imagem à direita) --- */
 .hero-row {
     display: flex;
     align-items: center;
@@ -195,7 +189,7 @@ header {
         padding: 60px 0;
     }
     .hero-row {
-        flex-direction: column-reverse; /* imagem em cima, texto abaixo para foco no botão */
+        flex-direction: column-reverse;
         text-align: center;
         gap: 20px;
     }
@@ -207,7 +201,6 @@ header {
     }
 }
 
-/* --- DIFERENCIAIS --- */
 .why-us {
     padding: var(--spacing-section) 0;
     background-color: var(--white);
@@ -247,7 +240,6 @@ header {
     color: var(--text-dark);
 }
 
-/* --- ANTES E DEPOIS (NOVA SEÇÃO) --- */
 .before-after {
     padding: var(--spacing-section) 0;
     background-color: var(--bg-calm);
@@ -296,7 +288,6 @@ header {
     display: block;
 }
 
-/* New styles for before/after pairs */
 .ba-card {
     background: transparent;
     padding: 8px;
@@ -318,13 +309,13 @@ header {
     border: 1px solid #eee;
     background: #fafafa;
     min-height: 120px;
-    overflow: hidden; /* keep layout consistent */
+    overflow: hidden; 
     display: block;
 }
 
 .ba-img img {
-    width: 100% !important; /* fill card width */
-    height: auto !important; /* keep aspect ratio */
+    width: 100% !important; 
+    height: auto !important; 
     max-height: none;
     object-fit: contain !important;
     display: block !important;
@@ -342,15 +333,13 @@ header {
     }
 }
 
-/* Classe utilitária para quando você colocar a imagem real */
 .ba-image-real {
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    display: none; /* Mude para block quando inserir a imagem */
+    display: none; 
 }
 
-/* --- TRATAMENTOS --- */
 .treatments {
     padding: var(--spacing-section) 0;
     background-color: var(--white);
@@ -385,7 +374,7 @@ header {
 
 .treatment-card h3 {
     margin-bottom: 15px;
-    color: #2c3e50; /* Um tom escuro neutro para títulos */
+    color: #2c3e50; 
 }
 
 .treatment-card ul {
@@ -409,10 +398,9 @@ header {
     font-weight: bold;
 }
 
-/* --- EQUIPE --- */
 .team {
     padding: var(--spacing-section) 0;
-    background-color: var(--bg-calm); /* Usando a cor "A Calmaria" */
+    background-color: var(--bg-calm);
 }
 
 .team-grid {
@@ -464,7 +452,6 @@ header {
     font-weight: 600;
 }
 
-/* --- DEPOIMENTOS --- */
 .testimonials {
     padding: var(--spacing-section) 0;
     background-color: var(--white);
@@ -500,7 +487,6 @@ header {
     color: var(--text-gray);
 }
 
-/* --- FAQ --- */
 .faq {
     padding: var(--spacing-section) 0;
     background-color: var(--bg-calm);
@@ -525,7 +511,6 @@ header {
     color: var(--text-gray);
 }
 
-/* --- CONTATO DIRETO --- */
 .contact-alt {
     padding: var(--spacing-section) 0 18px;
     background-color: var(--white);
@@ -572,7 +557,6 @@ header {
     font-weight: 700;
 }
 
-/* --- LOCALIZAÇÃO CURTA --- */
 .location-short {
     padding: 0 0 10px;
     margin-bottom: 8rem;
@@ -618,7 +602,6 @@ header {
     text-decoration: underline;
 }
 
-/* --- CTA FINAL / FOOTER --- */
 .final-cta {
     background-color: var(--primary-color);
     color: var(--white);
@@ -636,14 +619,13 @@ header {
 }
 
 footer {
-    background-color: #2c3e50; /* Escuro neutro para footer */
+    background-color: #2c3e50; 
     color: #ccc;
     text-align: center;
     padding: 30px 20px;
     font-size: 0.9rem;
 }
 
-/* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
@@ -661,7 +643,6 @@ footer {
         padding: 12px 18px;
     }
 
-    /* Navegação responsiva simples */
     .nav-container {
         flex-wrap: wrap;
         gap: 10px;
@@ -671,7 +652,6 @@ footer {
         justify-content: flex-start;
     }
 
-    /* Hero adapta colunas para empilhamento */
     .hero-row {
         flex-direction: column-reverse;
         align-items: center;
@@ -684,7 +664,6 @@ footer {
         width: 100%;
     }
 
-    /* Grids que viram listas em mobile */
     .features-list {
         grid-template-columns: 1fr;
     }
@@ -754,7 +733,6 @@ footer {
         height: 220px;
     }
 
-    /* Espaçamentos menores para evitar scroll excessivo */
     .features-list .feature-item,
     .treatment-card,
     .faq-item {
@@ -762,7 +740,6 @@ footer {
     }
 }
 
-/* Forçar imagens a não extrapolarem o container em qualquer largura */
 img {
     max-width: 100%;
     height: auto;
