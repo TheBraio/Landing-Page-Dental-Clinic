@@ -15,6 +15,15 @@
     <link rel="icon" href="icons/favicon.ico">
 
     <link rel="manifest" href="icons/site.webmanifest">
+
+    <!-- Google Ads Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022805167"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-18022805167');
+    </script>
 </head>
 <body>
 
@@ -25,7 +34,7 @@
                 <span style="font-size: 1.2rem; font-weight: bold; margin-left: 10px;">Family Dental Clinic</span>
             </div>
             
-            <a href="https://api.whatsapp.com/send/?phone=31920051512&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn-cta" style="padding: 10px 20px; font-size: 0.9rem;">
+            <a href="https://api.whatsapp.com/send/?phone=31920051512&text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn-cta" style="padding: 10px 20px; font-size: 0.9rem;">
                 <i class="fa-brands fa-whatsapp"></i> Agendar
             </a>
         </div>
@@ -37,7 +46,7 @@
                 <h1>Clínica Odontológica Completa em Belo Horizonte</h1>
                 <p>Seu sorriso saudável, bonito e confiante começa aqui. Tratamentos completos para toda a sua família.</p>
 
-                <a href="https://api.whatsapp.com/send/?phone=31920051512&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn-cta">
+                <a href="https://api.whatsapp.com/send/?phone=31920051512&text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn-cta">
                     <i class="fa-brands fa-whatsapp"></i> Falar com um especialista agora
                 </a>
             </div>
@@ -169,7 +178,7 @@
                 </div>
 
                 <div style="margin-top: 20px; text-align: center; grid-column: 1/-1;">
-                    <a href="https://wa.me/5531000000000" target="_blank" rel="noopener noreferrer" class="btn-cta btn-secondary">
+                    <a href="https://api.whatsapp.com/send/?phone=31920051512&text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn-cta btn-secondary">
                         Quero uma transformação assim
                     </a>
                 </div>
@@ -192,7 +201,7 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                 </div>
-                <p class="quote">“Excelente atendimento! Minha família inteira trata aqui.”</p>
+                <p class="quote">"Excelente atendimento! Minha família inteira trata aqui."</p>
                 <p class="author">- Comentário via Google</p>
             </div>
         </div>
@@ -261,7 +270,7 @@
         <div class="container">
             <h2>Agende sua avaliação agora</h2>
             <p style="margin-bottom: 30px; font-size: 1.1rem;">Não adie seu sorriso dos sonhos. Fale com nossa equipe agora mesmo!</p>
-            <a href="https://api.whatsapp.com/send/?phone=31920051512&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn-cta" style="background-color: #fff; color: var(--whatsapp-green);">
+            <a href="https://api.whatsapp.com/send/?phone=31920051512&text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn-cta" style="background-color: #fff; color: var(--whatsapp-green);">
                 <i class="fa-brands fa-whatsapp"></i> Agendar pelo WhatsApp
             </a>
         </div>
@@ -273,6 +282,19 @@
             <p style="font-size: 0.8rem; margin-top: 10px;">Belo Horizonte - MG</p>
         </div>
     </footer>
+
+    <!-- Google Ads: Evento de Conversão nos botões de WhatsApp -->
+    <script>
+        document.querySelectorAll('a[href*="whatsapp"], a[href*="wa.me"]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-18022805167/M3ipCOD9_ZMcEK_d-JFD',
+                    'value': 1.0,
+                    'currency': 'BRL'
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
